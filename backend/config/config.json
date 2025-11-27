@@ -14,10 +14,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "123456",
-    "database": "hrms_db_prod",
-    "host": "127.0.0.1",
+    "username": "${DB_USER}",
+    "password": "${DB_PASS}",
+    "database": "${DB_NAME}",
+    "host": "${DB_HOST}",
+    "port": "${DB_PORT}",
     "dialect": "mysql"
   }
 }
