@@ -1,0 +1,129 @@
+.emp-page {
+  min-height: calc(100vh - 50px);
+  background: #f5f6fb;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.emp-card {
+  background: #ffffff;
+  padding: 1.8rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  max-width: 900px;
+  width: 100%;
+}
+
+.emp-title {
+  margin: 0 0 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Form */
+.emp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.4rem;
+}
+
+.emp-form-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.emp-form-row input {
+  flex: 1;
+  padding: 0.55rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.emp-form-row input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+.emp-add-btn {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.emp-add-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
+}
+
+/* Table */
+.emp-list {
+  margin-top: 0.5rem;
+}
+
+.emp-empty {
+  margin: 0.5rem 0 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.emp-table thead {
+  background: #f3f4ff;
+}
+
+.emp-table th,
+.emp-table td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.emp-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Delete button */
+.emp-delete-btn {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  border: none;
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.emp-delete-btn:hover {
+  background: #dc2626;
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  .emp-card {
+    padding: 1.2rem 1.2rem;
+  }
+
+  .emp-form-row {
+    flex-direction: column;
+  }
+}
