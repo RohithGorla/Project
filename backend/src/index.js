@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 
 // middlewares
-app.use(cors());          // simple, works for localhost:3000
+app.use(cors({ origin: '*' })); // allow all origins for now
 app.use(express.json());
 
 // routes
