@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://YOUR-RENDER-URL.onrender.com/api', // put your actual Render URL here
+  baseURL: 'https://project-1-4gg8.onrender.com//api', // put your actual Render URL here
 });
 
 api.interceptors.request.use((config) => {
