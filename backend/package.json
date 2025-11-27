@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "migrate": "sequelize-cli db:migrate",
-    "sequelize": "sequelize-cli"
-  },
+  "start": "node src/index.js",
+  "dev": "nodemon src/index.js",
+  "migrate": "sequelize-cli db:migrate",
+  "sequelize": "sequelize-cli"
+}
   "keywords": [],
   "author": "",
   "license": "ISC",
